@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "258656413911",
-    "project_id": "socialified-23223",
-    "storage_bucket": "socialified-23223.appspot.com"
+    "project_number": "419919945132",
+    "project_id": "rapworldpromo-8eb14",
+    "storage_bucket": "rapworldpromo-8eb14.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:258656413911:android:bfa88e695cffd921626892",
+        "mobilesdk_app_id": "1:419919945132:android:39892fad5c6c4466e4ee09",
         "android_client_info": {
-          "package_name": "com.socialified"
+          "package_name": "com.rapworldpromo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "258656413911-iv8cgfsd2khapjnbpse2ef2oan4d1hjt.apps.googleusercontent.com",
+          "client_id": "419919945132-3ultqh44f5vhqoikcv89qfrib9ue9f5p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWN8fMFHp-PFXbY9Duu0uDsXJ-_DGSI9w"
+          "current_key": "AIzaSyBUGzawTelU5iStZbUMcTFSKJHnBB2H6pk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "258656413911-iv8cgfsd2khapjnbpse2ef2oan4d1hjt.apps.googleusercontent.com",
+              "client_id": "419919945132-3ultqh44f5vhqoikcv89qfrib9ue9f5p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

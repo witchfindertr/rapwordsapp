@@ -16,7 +16,9 @@ class AppConfigConstants {
   static const googleMapApiKey = 'add your google map api key';
   static const razorpayKey = '';
 
-  static const restApiBaseUrl = 'your rest api url';
+  // static const restApiBaseUrl = 'your rest api url';
+  static const restApiBaseUrl =
+      'https://socialifield.codieslab.com/api/web/v1/';
 
   static const socketApiBaseUrl = "your socket server url";
 

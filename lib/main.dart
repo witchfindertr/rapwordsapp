@@ -1,37 +1,36 @@
 import 'dart:io';
+
 import 'package:auto_orientation/auto_orientation.dart';
 import 'package:awesome_notifications/awesome_notifications.dart';
+import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:foap/apiHandler/apis/auth_api.dart';
-import 'package:foap/helper/imports/common_import.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:foap/controllers/live/live_users_controller.dart';
-import 'package:foap/screens/settings_menu/help_support_contorller.dart';
-import 'package:get/get.dart';
-import 'package:giphy_get/l10n.dart';
-import 'components/reply_chat_cells/post_gift_controller.dart';
-import 'controllers/faq_controller.dart';
+import 'package:foap/helper/imports/common_import.dart';
 import 'package:foap/screens/dashboard/dashboard_screen.dart';
 import 'package:foap/screens/login_sign_up/splash_screen.dart';
+import 'package:foap/screens/settings_menu/help_support_contorller.dart';
 import 'package:foap/screens/settings_menu/settings_controller.dart';
 import 'package:foap/util/constant_util.dart';
 import 'package:foap/util/shared_prefs.dart';
-import 'package:camera/camera.dart';
-import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
+import 'package:giphy_get/l10n.dart';
 import 'package:overlay_support/overlay_support.dart';
 
-import 'apiHandler/api_controller.dart';
 import 'components/post_card_controller.dart';
+import 'components/reply_chat_cells/post_gift_controller.dart';
 import 'controllers/add_post_controller.dart';
 import 'controllers/agora_call_controller.dart';
-import 'controllers/live/agora_live_controller.dart';
 import 'controllers/chat_and_call/chat_detail_controller.dart';
 import 'controllers/chat_and_call/chat_history_controller.dart';
 import 'controllers/chat_and_call/chat_room_detail_controller.dart';
 import 'controllers/chat_and_call/select_user_group_chat_controller.dart';
+import 'controllers/faq_controller.dart';
 import 'controllers/home_controller.dart';
+import 'controllers/live/agora_live_controller.dart';
 import 'controllers/live/live_history_controller.dart';
 import 'controllers/live_tv_streaming_controller.dart';
 import 'controllers/login_controller.dart';
@@ -59,6 +58,8 @@ late List<CameraDescription> cameras;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // runApp(MaterialApp(title: "Testing App", home:  TempLogin()));
+
   cameras = await availableCameras();
 
   await Firebase.initializeApp();

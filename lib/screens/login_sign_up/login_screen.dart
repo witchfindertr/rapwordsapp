@@ -1,5 +1,4 @@
 import 'package:foap/helper/imports/common_import.dart';
-import 'package:get/get.dart';
 import 'package:foap/helper/imports/login_signup_imports.dart';
 
 import '../../universal_components/rounded_input_field.dart';
@@ -42,8 +41,7 @@ class LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.08,
                     ),
-                    Heading3Text(welcomeString.tr,
-                        weight: TextWeight.bold),
+                    Heading3Text(welcomeString.tr, weight: TextWeight.bold),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.01,
                     ),
@@ -116,7 +114,8 @@ class LoginScreenState extends State<LoginScreen> {
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.04,
                     ),
-                    const SocialLogin(hidePhoneLogin: false).setPadding(left: 65, right: 65),
+                    const SocialLogin(hidePhoneLogin: false)
+                        .setPadding(left: 65, right: 65),
                     const Spacer(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,

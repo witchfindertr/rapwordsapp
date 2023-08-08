@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:foap/helper/imports/common_import.dart';
-import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 
 import '../../util/shared_prefs.dart';
@@ -27,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 4), () async{
+    Future.delayed(const Duration(seconds: 4), () async {
       String? authKey = await SharedPrefs().getAuthorizationKey();
 
       Get.offAll(() => const LoadingScreen());
@@ -99,10 +98,8 @@ class _SplashScreenState extends State<SplashScreen> {
                   const SizedBox(
                     height: 10,
                   ),
-                  BodyLargeText(
-                    AppConfigConstants.appName,
-                      weight: TextWeight.medium
-                  ),
+                  BodyLargeText(AppConfigConstants.appName,
+                      weight: TextWeight.medium),
                   Heading6Text(
                     AppConfigConstants.appTagline.tr,
                   ),
